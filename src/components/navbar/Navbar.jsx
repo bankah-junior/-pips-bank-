@@ -66,22 +66,22 @@ const Navbar = () => {
             <div className="toggler w-full md:hidden">
                 { toggleMenu ? <RiCloseLine color='white' size={27} onClick={() => setToggleMenu(false)} className='icon' /> : <RiMenu3Line color='white' size={27} onClick={() => setToggleMenu(true)} className='icon' /> }
                 { toggleMenu && (
-                    <div className="myLinks w-full text-right px-4 scale-in-hor-right rounded-t-lg" id="myLinks" style={{backgroundColor: "#333"}}>
+                    <div className="myLinks w-full text-right px-4 rounded-t-lg" id="myLinks" style={{backgroundColor: "#333"}}>
                         <Link to='/mentorship'>
-                            <li className='pb-2 pt-4 border-b-2'>Mentorship</li>
-                        </Link>
+                            <li className='pb-2 pt-4 scale-in-hor-right'>Mentorship</li>
+                        </Link><hr />
                         <Link to='/tutorials'>
-                            <li className='pb-2 border-b-2'>Tutorials</li>
-                        </Link>
+                            <li className='pb-2 scale-in-hor-right'>Tutorials</li>
+                        </Link><hr />
                         <Link to='/resources'>
-                            <li className='pb-2 border-b-2'>Resources</li>
-                        </Link>
+                            <li className='pb-2 scale-in-hor-right'>Resources</li>
+                        </Link><hr />
                         <Link to='/blogs'>
-                            <li className='pb-2 border-b-2'>Blogs</li>
-                        </Link>
+                            <li className='pb-2 scale-in-hor-right'>Blogs</li>
+                        </Link><hr />
                         <Link to='/events'>
-                            <li className='pb-2 border-b-2'>Events</li>
-                        </Link>
+                            <li className='pb-2 scale-in-hor-right'>Events</li>
+                        </Link><hr />
                         <Link to='/faqs'>
                             <li>FAQS</li>
                         </Link>

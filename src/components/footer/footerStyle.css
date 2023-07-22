@@ -13,3 +13,9 @@ footer {
 .submit-btn:hover {
     opacity: .9;
 }
+
+input:active,
+input:focus {
+    border: 2px solid #f56565;
+    outline: none;
+}

@@ -1,0 +1,51 @@
+.hero-btn1,
+.hero-btn2 {
+    transition: background .5s ease, color .5s ease;
+}
+
+.hero-btn1:hover,
+.hero-btn2:hover {
+    background-color: #3d9e40 !important;
+    color: white !important;
+}
+
+.room-btn1,
+.room-btn2,
+.room-btn3 {
+    transition: background .5s ease, color .5s ease;
+}
+
+.room-btn1 {
+    background-color: #0E1737;
+    color: white
+}
+
+.room-btn2 {
+    background-color: #3d9e40;
+    color: white
+}
+
+.room-btn3 {
+    background-color: #F56565;
+    color: white;    
+}
+
+.room-btn1:hover {
+    background-color: #F56565;
+}
+
+.room-btn2:hover {
+    background-color: #333;
+}
+
+.room-btn3:hover {
+    background-color: #0E1737;
+}
+
+.subscribe-btn {
+    transition: background .5s ease;
+}
+
+.subscribe-btn:hover {
+    background-color: #0E1737 !important;
+}
