@@ -1,0 +1,15 @@
+footer {
+    background-color: #3d9e40;
+    padding: 14px 16px;
+}
+
+.submit-btn {
+    right: .5rem;
+    top: 2rem;
+    transition: opacity .3s ease;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    opacity: .9;
+}

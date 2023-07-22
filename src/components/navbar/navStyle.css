@@ -1,0 +1,124 @@
+body {
+    overflow-x: hidden;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #3d9e40;
+    position: relative;
+    z-index: 999;
+  }
+
+  li {
+    list-style-type: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .icon {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: .8rem;
+    margin: 1rem;
+    border-radius: 10px;
+  }
+  
+  .active {
+    background-color: #3d9e40;
+    color: white;
+  }
+
+  .mobile-links {
+    color: #f56565 !important;
+  }
+
+  .menu_container_big ul a {
+    position: relative;
+    padding: 0;
+    transition: color .5s ease;;
+  }
+
+  .menu_container_big ul a:hover {
+    color: #f56565;
+  }
+
+  .menu_container_big ul a div {
+    position: absolute;
+    display: block;
+    width: 0;
+    bottom: 0;
+    transition: width .5s ease;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+
+  .menu_container_big ul a:hover div {
+    width: 100%;
+    padding: .1rem;
+    box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
+  }
+
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+.content {
+    padding-top: 1rem;
+}
+
+.scale-in-hor-right {
+	-webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+ @-webkit-keyframes scale-in-hor-right {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-hor-right {
+    0% {
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scaleX(1);
+              transform: scaleX(1);
+      -webkit-transform-origin: 100% 100%;
+              transform-origin: 100% 100%;
+      opacity: 1;
+    }
+  }
+  
+
+  @media screen and (max-width: 900px) {
+    .menu_container_big {
+        margin-left: 5rem;
+    }
+
+    a.option-link {
+        display: none;
+    }
+  }
