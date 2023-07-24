@@ -11,7 +11,7 @@ const Footer = () => {
 
         <div className="footer1 w-full md:w-100-70">
           <div className="md:w-100-20 w-100-50">
-              <Link to='/home' className='w-100-50 md:w-100-30'>
+              <Link to='/' className='w-100-50 md:w-100-30'>
                   <img src={logo} alt="logo" className="md:w-100-80" />
               </Link>
           </div><br />

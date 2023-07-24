@@ -1,11 +1,11 @@
 import React from 'react';
-import { Navbar, Footer } from '../../components';
+import { Navbar, Footer, Loading } from '../../components';
 
 const Tutorials = () => {
   return (
       <div>
         <Navbar />
-        <h1>Tutorials</h1>
+        <Loading />
         <Footer />
       </div>
   )

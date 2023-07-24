@@ -1,12 +1,12 @@
 body {
     overflow-x: hidden;
+    /* scroll-behavior: smooth; */
   }
 
   .topnav {
     overflow: hidden;
     background-color: #3d9e40;
-    position: relative;
-    z-index: 999;
+    z-index: 9999;
   }
 
   li {
@@ -65,7 +65,16 @@ body {
     box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06);
   }
 
+  .mobile-nav-menu {
+    transition: color .5s ease;
+  }
+
+  .mobile-nav-menu:hover {
+    color: #f56565 !important;
+  }
+
 .sticky {
+  width: 100%;
   position: fixed;
   top: 0;
 }
@@ -78,6 +87,17 @@ body {
 	-webkit-animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: scale-in-hor-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
+
+/* .to-top {
+  position: fixed;
+  right: 1%;
+  top: 90%;
+  z-index: 999;
+  background-color: #3d9e40;
+  padding: 1rem;
+  color: white;
+  font-weight: bolder;
+} */
 
  @-webkit-keyframes scale-in-hor-right {
     0% {

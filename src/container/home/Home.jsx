@@ -7,12 +7,15 @@ import classPracImg from '../../assets/home/class.png';
 import liveImg from '../../assets/home/live.png';
 import './homeStyle.css';
 import { BsYoutube } from 'react-icons/bs';
+import { SiSessionize } from 'react-icons/si';
+import { GiTeacher } from 'react-icons/gi';
+import { AiFillLike } from 'react-icons/ai';
 
 const Home = () => {
   return (
     <div>
       <Navbar />
-      <main data-aos="fade-up" data-aos-duration="500">
+      <main data-aos="fade-up" data-aos-duration="1000">
         
         {/* Hero section */}
         <section className='w-full flex flex-col md:flex-row items-center mb-12' style={{backgroundColor: "#efefef"}}>
@@ -21,7 +24,7 @@ const Home = () => {
           </div>
           <div className="w-full md:w-100-50 flex flex-col justify-center items-center my-6 px-6 md:px-12">
             <h3 className="text-2xl md:text-4xl font-semibold md:font-bold text-center md:my-0" style={{color: "#3d9e40"}}>
-              DISCOVER - LEARN <br /> EARN - TRADE
+              LEARN - DISCOVER <br /> INVEST - TRADE
             </h3><br />
             <p>
               The elements of good trading are:
@@ -31,10 +34,12 @@ const Home = () => {
               <span className="block text-right">-Ed Seykota</span>
             </p>
             <div className="w-full flex justify-around items-center mt-8 md:mt-20">
-              <button className='hero-btn1 bg-red-500 py-4 px-8 rounded-lg'>
-                <Link to='/'>Live Session</Link>
+              <button className='hero-btn1 bg-red-500 py-4 px-6 rounded-lg flex flex-row items-center justify-center'>
+                <SiSessionize size={24} className='mr-4' />
+                <Link to='/'>Sessions</Link>
               </button>
-              <button className='hero-btn2 text-white py-4 px-8 rounded-lg' style={{backgroundColor: "#333"}}>
+              <button className='hero-btn2 text-white py-4 px-6 rounded-lg flex flex-row items-center justify-center' style={{backgroundColor: "#333"}}>
+                <GiTeacher size={24} className='mr-4' />
                 <Link to='/mentorship'>Mentorship</Link>
               </button>
             </div>
@@ -100,7 +105,10 @@ const Home = () => {
             </div><br /><br />
             <div className="sub3">
               <Link className="">
-                <button className='subscribe-btn bg-red-500 py-4 px-12 rounded-lg text-white'>Join Now</button>
+                <button className='subscribe-btn bg-red-500 py-4 px-12 rounded-lg text-white flex flex-row justify-center items-center'>
+                  <span className='mr-4'>Join Now</span>
+                  <AiFillLike size={24} />
+                </button>
               </Link>
             </div>
             <br />
