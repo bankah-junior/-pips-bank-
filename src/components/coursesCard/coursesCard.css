@@ -1,0 +1,21 @@
+.imgTag {
+    background-color: #3d9e40;
+    top: 0;
+    left: 0;
+}
+
+.coursethumbnail {
+    transition: .5s ease;
+}
+
+.coursethumbnail:hover {
+    transform: scale(1.5);
+}
+
+.courseTitle {
+    transition: color .5s ease;
+}
+
+.courseTitle:hover {
+    color: #F56565;
+}

@@ -45,27 +45,27 @@ const Navbar = () => {
             </div>
             <div className="menu_container_big md:w-100-30 hidden md:block text-4xl font-semibold">
                 <ul className="flex flex-col md:flex-row justify-around">
-                    <Link to='/mentorship' className="flex flex-col">
+                    <Link className="flex flex-col">
                         <li className="mb-1">Mentorship</li>
                         <div className="bg-red-500"></div>
                     </Link>
-                    <Link to='/tutorials' className="flex flex-col">
+                    <Link className="flex flex-col">
                         <li className="mb-1">Tutorials</li>
                         <div className="bg-red-500"></div>
                     </Link>
-                    <Link to='/resources' className="flex flex-col">
+                    <Link className="flex flex-col">
                         <li className="mb-1">Resources</li>
                         <div className="bg-red-500"></div>
                     </Link>
-                    <Link to='/blogs' className="flex flex-col">
+                    <Link className="flex flex-col">
                         <li className="mb-1">Blogs</li>
                         <div className="bg-red-500"></div>
                     </Link>
-                    <Link to='/events' className="flex flex-col">
+                    <Link className="flex flex-col">
                         <li className="mb-1">Events</li>
                         <div className="bg-red-500"></div>
                     </Link>
-                    <Link to='/faqs' className="option-link">
+                    <Link className="option-link">
                         <li className="mb-1">FAQS</li>
                         <div className="bg-red-500"></div>
                     </Link>
@@ -75,27 +75,27 @@ const Navbar = () => {
                 { toggleMenu ? <RiCloseLine color='white' size={27} onClick={() => setToggleMenu(false)} className='icon' /> : <RiMenu3Line color='white' size={27} onClick={() => setToggleMenu(true)} className='icon' /> }
                 { toggleMenu && (
                     <div className="myLinks w-full text-right px-4 rounded-t-lg" id="myLinks" style={{backgroundColor: "#333"}}>
-                        <Link to='/mentorship' className='mobile-nav-menu flex flex-row items-center justify-end'>
+                        <Link className='mobile-nav-menu flex flex-row items-center justify-end'>
                             <li className='pb-2 pt-4 scale-in-hor-right mr-4'>Mentorship</li>
                             <GiTeacher size={24} color='white' />
                         </Link><hr />
-                        <Link to='/tutorials' className='mobile-nav-menu flex flex-row items-center justify-end'>
+                        <Link className='mobile-nav-menu flex flex-row items-center justify-end'>
                             <li className='pb-2 scale-in-hor-right mr-4'>Tutorials</li>
                             <BsPersonVideo size={24} color='white' />
                         </Link><hr />
-                        <Link to='/resources' className='mobile-nav-menu flex flex-row items-center justify-end'>
+                        <Link className='mobile-nav-menu flex flex-row items-center justify-end'>
                             <li className='pb-2 scale-in-hor-right mr-4'>Resources</li>
                             <SiMaterialdesignicons size={24} color='white' />
                         </Link><hr />
-                        <Link to='/blogs' className='mobile-nav-menu flex flex-row items-center justify-end'>
+                        <Link className='mobile-nav-menu flex flex-row items-center justify-end'>
                             <li className='pb-2 scale-in-hor-right mr-4'>Blogs</li>
                             <FaBlog size={24} color='white' />
                         </Link><hr />
-                        <Link to='/events' className='mobile-nav-menu flex flex-row items-center justify-end'>
+                        <Link className='mobile-nav-menu flex flex-row items-center justify-end'>
                             <li className='pb-2 scale-in-hor-right mr-4'>Events</li>
                             <MdEventSeat size={24} color='white' />
                         </Link><hr />
-                        <Link to='/faqs' className='mobile-nav-menu flex flex-row items-center justify-end'>
+                        <Link className='mobile-nav-menu flex flex-row items-center justify-end'>
                             <li className='scale-in-hor-right mr-4'>FAQS</li>
                             <RiQuestionnaireFill size={24} color='white' />
                         </Link>

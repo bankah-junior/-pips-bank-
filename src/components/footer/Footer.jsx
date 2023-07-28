@@ -83,7 +83,7 @@ const Footer = () => {
             <Link to='https://www.instagram.com/@iam.bankah' title='Instagram'>
               <BsInstagram size={27} color='' className='mr-8' />
             </Link>
-            <Link to='https://www.youtube.com/@welearn2' title='YouTube'>
+            <Link to='https://www.youtube.com/@welearn2?sub_confirmation=1' title='YouTube'>
               <BsYoutube size={27} color='#C4302B' className='mr-8' />
             </Link>
             <Link to='https://www.linkedin.com/in/anthony-bekoe-bankah-080448240' title='LinkedIn'>
