@@ -4,3 +4,4 @@ export { default as RoomCard } from './roomCard/RoomCard';
 export { default as Loading } from './loadingPage/Loading';
 export { default as TestimonialCard } from './testimonialCard/TestimonialCard';
 export { default as CoursesCard } from './coursesCard/CoursesCard';
+export { default as ResourcesCard } from './resourcesCard/ResourcesCard';

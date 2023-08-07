@@ -49,11 +49,11 @@ const Navbar = () => {
                         <li className="mb-1">Mentorship</li>
                         <div className="bg-red-500"></div>
                     </Link>
-                    <Link className="flex flex-col">
+                    <Link to={"/tutorials"} className="flex flex-col">
                         <li className="mb-1">Tutorials</li>
                         <div className="bg-red-500"></div>
                     </Link>
-                    <Link className="flex flex-col">
+                    <Link to={"/resources"} className="flex flex-col">
                         <li className="mb-1">Resources</li>
                         <div className="bg-red-500"></div>
                     </Link>
@@ -79,11 +79,11 @@ const Navbar = () => {
                             <li className='pb-2 pt-4 scale-in-hor-right mr-4'>Mentorship</li>
                             <GiTeacher size={24} color='white' />
                         </Link><hr />
-                        <Link className='mobile-nav-menu flex flex-row items-center justify-end'>
+                        <Link to={"/tutorials"} className='mobile-nav-menu flex flex-row items-center justify-end'>
                             <li className='pb-2 scale-in-hor-right mr-4'>Tutorials</li>
                             <BsPersonVideo size={24} color='white' />
                         </Link><hr />
-                        <Link className='mobile-nav-menu flex flex-row items-center justify-end'>
+                        <Link to={"/resources"} className='mobile-nav-menu flex flex-row items-center justify-end'>
                             <li className='pb-2 scale-in-hor-right mr-4'>Resources</li>
                             <SiMaterialdesignicons size={24} color='white' />
                         </Link><hr />

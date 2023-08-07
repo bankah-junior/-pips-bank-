@@ -195,7 +195,7 @@ const Home = () => {
                 <CoursesCard courseThumbnail={pbBegImg} courseLevel={"Intermediate"} coursetitle={"Live Trading and Training"} courseDescription={"Watch us trade live and learn how we catch trands early..."} />
               </div>
               <div className="w-full md:w-100-60 ">
-                <CoursesCard courseThumbnail={pbMentImg} courseLevel={"All_Levels"} coursetitle={"Beginners Class"} courseDescription={"This course contains everything ypu need to know about forex..."} />
+                <CoursesCard courseThumbnail={pbMentImg} courseLevel={"All_Levels"} coursetitle={"Beginners Class"} courseDescription={"This course contains everything you need to know about forex..."} />
               </div>
             </div>
         </section>
