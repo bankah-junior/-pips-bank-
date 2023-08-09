@@ -74,7 +74,7 @@ const Home = () => {
                 "We have a community of over 20,000 Forex Traders where continuous Technical and Fundamental analysis is beingshared"
               }
               linkName={"join our telegram"}
-              linkTo={"/"}
+              linkTo={"https://t.me/pipsbanktrade"}
               cardClass={
                 "room-btn1 w-full py-4 rounded-lg capitalize font-semibold"
               }
@@ -102,7 +102,7 @@ const Home = () => {
                 "Join on discuss live chart. You get to know and understand certain things that can't be taught in book but through streaming"
               }
               linkName={"follow for great staffs"}
-              linkTo={"/"}
+              linkTo={'https://www.youtube.com/@welearn2?sub_confirmation=1'}
               cardClass={
                 "room-btn3 w-full py-4 rounded-lg capitalize font-semibold"
               }
@@ -148,7 +148,7 @@ const Home = () => {
             <br />
             <br />
             <div className="sub3" data-aos="fade-up" data-aos-duration="800">
-              <Link className="">
+              <Link to='https://www.youtube.com/@welearn2?sub_confirmation=1' className="">
                 <button className="subscribe-btn bg-red-500 py-4 px-12 rounded-lg text-white flex flex-row justify-center items-center">
                   <span className="mr-4">Join Now</span>
                   <AiFillLike size={24} />
@@ -176,7 +176,7 @@ const Home = () => {
             <br />
             <p className="opacity-75 capitalize">
               Join Our Winning Team 
-              <Link className="ml-4 text-red-600 underline">Join Now</Link>
+              <Link to='https://t.me/pipsbanktrade' className="ml-4 text-red-600 underline">Join Now</Link>
             </p>
           </div>
           <div className="w-full md:w-100-40 relative flex flex-col md:flex-row">

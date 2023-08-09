@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="footer1 w-full md:w-100-70">
           <div className="md:w-100-20 w-100-50">
               <Link to='/' className='w-100-50 md:w-100-30'>
-                  <img src={logo} alt="logo" className="md:w-100-80" />
+                  <img src={logo} alt="logo" className="md:w-100-50" />
               </Link>
           </div><br />
           <p>
@@ -29,10 +29,10 @@ const Footer = () => {
             <Link>
               <li className='mr-4 opacity-75'>About Us</li>
             </Link><br />
-            <Link>
+            <Link to="/resources">
               <li className='mr-4 opacity-75'>Resources</li>
             </Link><br />
-            <Link>
+            <Link to="/tutorials">
               <li className='mr-4 opacity-75'>Tutorials</li>
             </Link>
           </ul> <br />

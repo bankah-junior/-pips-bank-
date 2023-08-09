@@ -1,4 +1,5 @@
 import React from 'react';
+import './resourcesCard.css';
 
 const ResourcesCard = ({resourceImg, resourceTitle, resourceText, resourceLink, resourceType}) => {
   return (

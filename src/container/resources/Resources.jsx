@@ -21,7 +21,7 @@ const Resources = () => {
            resourceImg={resourceImg2} 
            resourceTitle={"BEGINNERS GUIDE TO FOREX TRADING"}
            resourceText={"This document has been prepared for those who want to take a step into the forex trading world and its contents are practical based and real world related. Click the button below to download the document. "}
-           resourceLink={"#home"}
+           resourceLink={"https://drive.google.com/uc?export=download&id=1wrnZAW6L2UdFoM_IhlvTnPYvz6j8lCiX"}
            resourceType={"Free Tool"}
           />
         </main>
