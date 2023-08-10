@@ -20,7 +20,7 @@ const Footer = () => {
             Keep in mind that for everything to work well it begins with the mindset.
           </p><br />
           <p>
-            &copy; 2023 Pips-Bank . All Rights Reserved <br /> Developed by: <Link to='bankidev.netlify.app'>BankiDev</Link>
+            &copy; 2023 Pips-Bank . All Rights Reserved <br /> Developed by: <Link to='https://bankidev.netlify.app'>BankiDev</Link>
           </p>
         </div><br /><br />
 
