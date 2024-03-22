@@ -7,9 +7,9 @@ import './footerStyle.css';
 const Footer = () => {
   return (
     <>
-      <footer className="flex flex-col md:flex-row justify-between w-full md:px-2 text-white md:px-12 py-12">
+      <footer className="flex flex-col justify-between w-full py-12 text-white md:flex-row md:px-2 md:px-12">
 
-        <div className="footer1 w-full md:w-100-70">
+        <div className="w-full footer1 md:w-100-70">
           <div className="md:w-100-20 w-100-50">
               <Link to='/' className='w-100-50 md:w-100-30'>
                   <img src={logo} alt="logo" className="md:w-100-50" />
@@ -20,11 +20,11 @@ const Footer = () => {
             Keep in mind that for everything to work well it begins with the mindset.
           </p><br />
           <p>
-            &copy; 2023 Pips-Bank . All Rights Reserved <br /> Developed by: <Link to='https://bankidev.netlify.app'>BankiDev</Link>
+            &copy; 2024 Pips-Bank . All Rights Reserved <br /> Developed by: <Link to='https://bankidev.netlify.app'>Bankah</Link>
           </p>
         </div><br /><br />
 
-        <div className="footer2 flex flex-col md:flex-row w-full md:w-100-70">
+        <div className="flex flex-col w-full footer2 md:flex-row md:w-100-70">
           <ul className='flex flex-row md:flex-col md:mr-12'>
             <Link>
               <li className='mr-4 opacity-75'>About Us</li>
@@ -40,7 +40,7 @@ const Footer = () => {
             <Link>
               <li className='mr-4 opacity-75'>Contact Us</li>
             </Link><br />
-            <Link>
+            <Link to={"/events"}>
               <li className='mr-4 opacity-75'>Events</li>
             </Link><br />
             <Link>
@@ -49,22 +49,22 @@ const Footer = () => {
           </ul>
         </div><br /><br />
 
-        <div className="footer3 w-full md:w-100-70">
-          <h3 className="font-semibold text-lg">Sign Up for Our Newsletter</h3>
-          <div className="form relative flex flex-col"><br />
+        <div className="w-full footer3 md:w-100-70">
+          <h3 className="text-lg font-semibold">Sign Up for Our Newsletter</h3>
+          <div className="relative flex flex-col form"><br />
             <label htmlFor="name" className='mb-4'><b>Name <span className='text-red-500'> *</span></b></label>
-            <input type="text" name="name" id="name" placeholder='Name' className='bg-gray-300 border-2 rounded p-2' required /><br />
+            <input type="text" name="name" id="name" placeholder='Name' className='p-2 bg-gray-300 border-2 rounded' required /><br />
             <label htmlFor="email" className='mb-4'><b>Email <span className='text-red-500'> *</span></b></label>
-            <input type="email" name="email" id="email" placeholder='Email' className='bg-gray-300 border-2 rounded p-2' required /><br />
+            <input type="email" name="email" id="email" placeholder='Email' className='p-2 bg-gray-300 border-2 rounded' required /><br />
             <p>
               <b>
                 Would you like to take a masterclass to guide you daily on what profitable trades to take?
               </b><br />
-              <span className='block mt-2 flex '>
+              <span className='flex block mt-2 '>
                 <input type="radio" name="yesNo" id="yes" className='mr-1' />
                 <label htmlFor="yes">Yes</label>
               </span>
-              <span className='block mt-2 flex '>
+              <span className='flex block mt-2 '>
                 <input type="radio" name="yesNo" id="no" className='mr-1' />
                 <label htmlFor="no">No</label>
               </span>
@@ -72,11 +72,11 @@ const Footer = () => {
                 Receive weekly newsletter with educational materials, popular books and much more!
               </p>
             </p>
-            <input type="submit" value="Subscribe" className='bg-red-500 absolute font-bold text-xl py-2 px-6 rounded submit-btn' />
+            <input type="submit" value="Subscribe" className='absolute px-6 py-2 text-xl font-bold bg-red-500 rounded submit-btn' />
           </div><br />
 
           <b><u>Follow our Social Media:</u></b>
-          <div className="social-media flex items-center mt-2">
+          <div className="flex items-center mt-2 social-media">
             <Link to='https://twitter.com/iam_bankah?t=UFouGnCo6AL1bxU_MMVRg&s=09' title='Twitter'>
               <BsTwitter size={27} color='#0072B1' className='mr-8' />
             </Link>

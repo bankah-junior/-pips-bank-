@@ -37,16 +37,16 @@ const Navbar = () => {
   return (
 
     <div className='relative'>
-        <div className="topnav flex flex-col md:flex-row items-center md:px-2" id="navbar">
-            <div className="active w-full md:w-100-70 md:ml-6">
+        <div className="flex flex-col items-center topnav md:flex-row md:px-2" id="navbar">
+            <div className="w-full active md:w-100-70 md:ml-6">
                 <Link to='/' className='w-100-50'>
                     <img src={logo} alt="logo" className="md:w-full" />
                 </Link>
             </div>
-            <div className="menu_container_big md:w-100-30 hidden md:block text-4xl font-semibold">
-                <ul className="flex flex-col md:flex-row justify-around">
-                    <Link className="flex flex-col">
-                        <li className="mb-1">Mentorship</li>
+            <div className="hidden text-4xl font-semibold menu_container_big md:w-100-30 md:block">
+                <ul className="flex flex-col justify-around md:flex-row">
+                    <Link className="flex flex-col" to={"/chart"}>
+                        <li className="mb-1">Chart</li>
                         <div className="bg-red-500"></div>
                     </Link>
                     <Link to={"/tutorials"} className="flex flex-col">
@@ -57,11 +57,11 @@ const Navbar = () => {
                         <li className="mb-1">Resources</li>
                         <div className="bg-red-500"></div>
                     </Link>
-                    <Link className="flex flex-col">
-                        <li className="mb-1">Blogs</li>
+                    <Link className="flex flex-col" to={'/econs-calendar'}>
+                        <li className="mb-1">Economic Calendar</li>
                         <div className="bg-red-500"></div>
                     </Link>
-                    <Link className="flex flex-col">
+                    <Link className="flex flex-col" to={"/events"}>
                         <li className="mb-1">Events</li>
                         <div className="bg-red-500"></div>
                     </Link>
@@ -71,39 +71,39 @@ const Navbar = () => {
                     </Link>
                 </ul>
             </div>
-            <div className="toggler w-full md:hidden">
+            <div className="w-full toggler md:hidden">
                 { toggleMenu ? <RiCloseLine color='white' size={27} onClick={() => setToggleMenu(false)} className='icon' /> : <RiMenu3Line color='white' size={27} onClick={() => setToggleMenu(true)} className='icon' /> }
                 { toggleMenu && (
-                    <div className="myLinks w-full text-right px-4 rounded-t-lg" id="myLinks" style={{backgroundColor: "#333"}}>
-                        <Link className='mobile-nav-menu flex flex-row items-center justify-end'>
-                            <li className='pb-2 pt-4 scale-in-hor-right mr-4'>Mentorship</li>
+                    <div className="w-full px-4 text-right rounded-t-lg myLinks" id="myLinks" style={{backgroundColor: "#333"}}>
+                        <Link className='flex flex-row items-center justify-end mobile-nav-menu'>
+                            <li className='pt-4 pb-2 mr-4 scale-in-hor-right'>Mentorship</li>
                             <GiTeacher size={24} color='white' />
                         </Link><hr />
-                        <Link to={"/tutorials"} className='mobile-nav-menu flex flex-row items-center justify-end'>
-                            <li className='pb-2 scale-in-hor-right mr-4'>Tutorials</li>
+                        <Link to={"/tutorials"} className='flex flex-row items-center justify-end mobile-nav-menu'>
+                            <li className='pb-2 mr-4 scale-in-hor-right'>Tutorials</li>
                             <BsPersonVideo size={24} color='white' />
                         </Link><hr />
-                        <Link to={"/resources"} className='mobile-nav-menu flex flex-row items-center justify-end'>
-                            <li className='pb-2 scale-in-hor-right mr-4'>Resources</li>
+                        <Link to={"/resources"} className='flex flex-row items-center justify-end mobile-nav-menu'>
+                            <li className='pb-2 mr-4 scale-in-hor-right'>Resources</li>
                             <SiMaterialdesignicons size={24} color='white' />
                         </Link><hr />
-                        <Link className='mobile-nav-menu flex flex-row items-center justify-end'>
-                            <li className='pb-2 scale-in-hor-right mr-4'>Blogs</li>
+                        <Link className='flex flex-row items-center justify-end mobile-nav-menu'>
+                            <li className='pb-2 mr-4 scale-in-hor-right'>Blogs</li>
                             <FaBlog size={24} color='white' />
                         </Link><hr />
-                        <Link className='mobile-nav-menu flex flex-row items-center justify-end'>
-                            <li className='pb-2 scale-in-hor-right mr-4'>Events</li>
+                        <Link className='flex flex-row items-center justify-end mobile-nav-menu'>
+                            <li className='pb-2 mr-4 scale-in-hor-right'>Events</li>
                             <MdEventSeat size={24} color='white' />
                         </Link><hr />
-                        <Link className='mobile-nav-menu flex flex-row items-center justify-end'>
-                            <li className='scale-in-hor-right mr-4'>FAQS</li>
+                        <Link className='flex flex-row items-center justify-end mobile-nav-menu'>
+                            <li className='mr-4 scale-in-hor-right'>FAQS</li>
                             <RiQuestionnaireFill size={24} color='white' />
                         </Link>
                     </div>
                 ) }
             </div>
         </div>
-        {/* <a href="#navbar" className='to-top hidden mr-4' id='toTop'>
+        {/* <a href="#navbar" className='hidden mr-4 to-top' id='toTop'>
             <button>Up</button>
         </a> */}
     </div>

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './tailwind.css';
 import './index.css';
 
-import { Home, Mentorship, Tutorials, Resources, Events, Blogs, FAQS } from './container';
+import { Home, Tutorials, Resources, Events, EconsCalendar, FAQS, Chart } from './container';
 
 function App() {
   return (
@@ -11,11 +11,11 @@ function App() {
       <Routes>
         {/* <Route path='/' element={<Landing />} /> */}
         <Route path='/' element={<Home />} />
-        <Route path='/mentorship' element={<Mentorship />} />
+        <Route path='/chart' element={<Chart />} />
         <Route path='/tutorials' element={<Tutorials />} />
         <Route path='/resources' element={<Resources />} />
         <Route path='/events' element={<Events />} />
-        <Route path='/blogs' element={<Blogs />} />
+        <Route path='/econs-calendar' element={<EconsCalendar />} />
         <Route path='/faqs' element={<FAQS />} />
       </Routes>
     </Router>
