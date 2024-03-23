@@ -75,8 +75,8 @@ const Navbar = () => {
                 { toggleMenu ? <RiCloseLine color='white' size={27} onClick={() => setToggleMenu(false)} className='icon' /> : <RiMenu3Line color='white' size={27} onClick={() => setToggleMenu(true)} className='icon' /> }
                 { toggleMenu && (
                     <div className="w-full px-4 text-right rounded-t-lg myLinks" id="myLinks" style={{backgroundColor: "#333"}}>
-                        <Link className='flex flex-row items-center justify-end mobile-nav-menu'>
-                            <li className='pt-4 pb-2 mr-4 scale-in-hor-right'>Mentorship</li>
+                        <Link className='flex flex-row items-center justify-end mobile-nav-menu' to={"/chart"}>
+                            <li className='pt-4 pb-2 mr-4 scale-in-hor-right'>Chart</li>
                             <GiTeacher size={24} color='white' />
                         </Link><hr />
                         <Link to={"/tutorials"} className='flex flex-row items-center justify-end mobile-nav-menu'>
@@ -87,11 +87,11 @@ const Navbar = () => {
                             <li className='pb-2 mr-4 scale-in-hor-right'>Resources</li>
                             <SiMaterialdesignicons size={24} color='white' />
                         </Link><hr />
-                        <Link className='flex flex-row items-center justify-end mobile-nav-menu'>
-                            <li className='pb-2 mr-4 scale-in-hor-right'>Blogs</li>
+                        <Link className='flex flex-row items-center justify-end mobile-nav-menu' to={'/econs-calendar'}>
+                            <li className='pb-2 mr-4 scale-in-hor-right'>Economic Calendar</li>
                             <FaBlog size={24} color='white' />
                         </Link><hr />
-                        <Link className='flex flex-row items-center justify-end mobile-nav-menu'>
+                        <Link className='flex flex-row items-center justify-end mobile-nav-menu' to={"/events"}>
                             <li className='pb-2 mr-4 scale-in-hor-right'>Events</li>
                             <MdEventSeat size={24} color='white' />
                         </Link><hr />
