@@ -16,7 +16,7 @@ const Footer = () => {
               </Link>
           </div><br />
           <p>
-            Pips Bank offers information and educational materials for both beginners and pros. 
+            Jugo Trading offers information and educational materials for both beginners and pros. 
             Keep in mind that for everything to work well it begins with the mindset.
           </p><br />
           <p>

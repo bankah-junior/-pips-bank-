@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 const RoomCard = ({cardImage, title, text, linkName, linkTo, cardClass, animeName, animeDelay}) => {
   return (
     <div className="card md:w-[30%] w-full text-center mb-12 p-2" data-aos={animeName} data-aos-duration={animeDelay}>
-      <img src={cardImage} alt="Pips Bank" className='w-full' />
+      <img src={cardImage} alt="Jugo Trading" className='w-full' />
       <h3 className='my-4 capitalize font-semibold md:font-bold text-xl'>{title}</h3>
       <p className='text-sm opacity-75 mb-4'>
         {text}

@@ -27,7 +27,7 @@ const Landing = () => {
             <img src={frontImg} alt="" />
             <div className="text">
               <span className="text-1">
-                Discover | Learn | Invest | Trade <br /> Pips Bank
+                Discover | Learn | Invest | Trade <br /> Jugo Trading
               </span>
               <span className="text-2">Let's get connected</span>
             </div>

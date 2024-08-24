@@ -25,7 +25,7 @@ const Home = () => {
           style={{ backgroundColor: "#efefef" }}
         >
           <div className="w-full md:w-1/2">
-            <img src={heroImage} alt="Pips Bank" />
+            <img src={heroImage} alt="Jugo Trading" />
           </div>
           <div className="flex flex-col items-center justify-center w-full px-6 my-6 md:w-1/2 md:px-12">
             <h3
@@ -85,7 +85,7 @@ const Home = () => {
               cardImage={classPracImg}
               title={"practical class"}
               text={
-                "You are at your pace of learning because we do believe how unique people are, that's what Pips Bank offers."
+                "You are at your pace of learning because we do believe how unique people are, that's what Jugo Trading offers."
               }
               linkName={"link up with tutor"}
               linkTo={"/"}

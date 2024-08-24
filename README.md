@@ -1,1 +1,1 @@
-### Pips Bank
+### Jugo Trading
