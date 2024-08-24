@@ -2,6 +2,7 @@ import React from "react";
 import "./style.css";
 import backImg from "../../assets/landing/backImg.jpg";
 import frontImg from "../../assets/landing/frontImg.jpg";
+import landingBG from "../../assets/landing/LandingBG.jpg";
 import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
@@ -13,8 +14,9 @@ const Landing = () => {
 
   return (
     <div className="landingContainer">
+      <div className="absolute w-full h-full" style={{ backgroundImage: `url(${landingBG})`, opacity: 0.3, backgroundRepeat: 'no-repeat', backgroundSize: 'cover' }}></div>
       <div
-        className="container"
+        className="container shadow-2xl"
         data-aos="flip-left"
         data-aos-easing="ease-out-cubic"
         data-aos-duration="2000"

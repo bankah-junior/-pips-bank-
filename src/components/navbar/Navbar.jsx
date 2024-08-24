@@ -46,7 +46,7 @@ const Navbar = () => {
                         <li className="mb-1">Events</li>
                         <div className="bg-red-500"></div>
                     </Link>
-                    <Link className="option-link">
+                    <Link className="option-link" to={"/faqs"}>
                         <li className="mb-1">FAQS</li>
                         <div className="bg-red-500"></div>
                     </Link>

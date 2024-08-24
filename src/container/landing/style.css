@@ -8,11 +8,11 @@
 }
 .landingContainer{
   min-height: 100vh;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* background: green; */
-  background: green;
+  background-color: green;
   padding: 30px;
 }
 .container{
