@@ -7,12 +7,12 @@ import './footerStyle.css';
 const Footer = () => {
   return (
     <>
-      <footer className="flex flex-col justify-between w-full py-12 text-white md:flex-row md:px-2 md:px-12">
+      <footer className="flex flex-col justify-between w-full py-12 text-white md:flex-row md:px-12">
 
-        <div className="w-full footer1 md:w-100-70">
-          <div className="md:w-100-20 w-100-50">
-              <Link to='/' className='w-100-50 md:w-100-30'>
-                  <img src={logo} alt="logo" className="md:w-100-50" />
+        <div className="w-full footer1 md:w-[30%]">
+          <div className="md:w-4/5 w-1/2">
+              <Link to='/home' className='w-1/2 md:w-[70%]'>
+                  <img src={logo} alt="logo" className="md:w-1/2" />
               </Link>
           </div><br />
           <p>
@@ -24,7 +24,7 @@ const Footer = () => {
           </p>
         </div><br /><br />
 
-        <div className="flex flex-col w-full footer2 md:flex-row md:w-100-70">
+        <div className="flex flex-col w-full footer2 md:flex-row md:w-[30%]">
           <ul className='flex flex-row md:flex-col md:mr-12'>
             <Link>
               <li className='mr-4 opacity-75'>About Us</li>
@@ -49,7 +49,7 @@ const Footer = () => {
           </ul>
         </div><br /><br />
 
-        <div className="w-full footer3 md:w-100-70">
+        <div className="w-full footer3 md:w-[30%]">
           <h3 className="text-lg font-semibold">Sign Up for Our Newsletter</h3>
           <div className="relative flex flex-col form"><br />
             <label htmlFor="name" className='mb-4'><b>Name <span className='text-red-500'> *</span></b></label>
@@ -60,11 +60,11 @@ const Footer = () => {
               <b>
                 Would you like to take a masterclass to guide you daily on what profitable trades to take?
               </b><br />
-              <span className='flex block mt-2 '>
+              <span className='flex mt-2 '>
                 <input type="radio" name="yesNo" id="yes" className='mr-1' />
                 <label htmlFor="yes">Yes</label>
               </span>
-              <span className='flex block mt-2 '>
+              <span className='flex mt-2 '>
                 <input type="radio" name="yesNo" id="no" className='mr-1' />
                 <label htmlFor="no">No</label>
               </span>

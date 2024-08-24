@@ -1,10 +1,16 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./style.css";
 import backImg from "../../assets/landing/backImg.jpg";
 import frontImg from "../../assets/landing/frontImg.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Landing = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/home");
+  };
+
   return (
     <div className="landingContainer">
       <div
@@ -45,7 +51,7 @@ const Landing = () => {
                     <input
                       type="text"
                       placeholder="Enter your email"
-                      required
+                      // required
                     />
                   </div>
                   <div className="input-box">
@@ -53,24 +59,15 @@ const Landing = () => {
                     <input
                       type="password"
                       placeholder="Enter your password"
-                      required
+                      // required
                     />
                   </div>
                   <div className="text">
                     <a href="#fp">Forgot password?</a>
                   </div>
-                  <div className="button input-box">
-                    {/* <input type="submit" value="Sumbit" /> */}
+                  <div className="button input-box" onClick={handleClick}>
+                    <input type="submit" value="Sumbit" />
                   </div>
-                  <Link
-                    to="/home"
-                    className="p-2 rounded"
-                    style={{ backgroundColor: "#7d2ae8", color: "white" }}
-                  >
-                    <button className=" demo-btn w-full font-semibold">
-                      Submit
-                    </button>
-                  </Link>
                   <div className="text sign-up-text">
                     Don't have an account? <label for="flip">Sigup now</label>
                   </div>
@@ -83,14 +80,14 @@ const Landing = () => {
                 <div className="input-boxes">
                   <div className="input-box">
                     <i className="fas fa-user"></i>
-                    <input type="text" placeholder="Enter your name" required />
+                    <input type="text" placeholder="Enter your name" />
                   </div>
                   <div className="input-box">
                     <i className="fas fa-envelope"></i>
                     <input
                       type="text"
                       placeholder="Enter your email"
-                      required
+                      // required
                     />
                   </div>
                   <div className="input-box">
@@ -98,11 +95,11 @@ const Landing = () => {
                     <input
                       type="password"
                       placeholder="Enter your password"
-                      required
+                      // required
                     />
                   </div>
                   <div className="button input-box">
-                    <input type="submit" value="Sumbit" />
+                    <input type="submit" value="Sumbit" onClick={handleClick} />
                   </div>
                   <div className="text sign-up-text">
                     Already have an account? <label for="flip">Login now</label>

@@ -24,10 +24,10 @@ const Home = () => {
           className="flex flex-col items-center w-full mb-12 md:flex-row"
           style={{ backgroundColor: "#efefef" }}
         >
-          <div className="w-full md:w-100-50">
+          <div className="w-full md:w-1/2">
             <img src={heroImage} alt="Pips Bank" />
           </div>
-          <div className="flex flex-col items-center justify-center w-full px-6 my-6 md:w-100-50 md:px-12">
+          <div className="flex flex-col items-center justify-center w-full px-6 my-6 md:w-1/2 md:px-12">
             <h3
               className="text-2xl font-semibold text-center md:text-4xl md:font-bold md:my-0"
               style={{ color: "#3d9e40" }}
@@ -162,24 +162,24 @@ const Home = () => {
 
         {/* Testimonials Section */}
         <section className="flex flex-col w-full px-6 my-12 md:flex-row md:px-24">
-          <div className="flex flex-col w-full md:w-100-60">
-            <img src={teamSpiritSVG} alt="com" className="md:w-100-30" /> <br />
+          <div className="flex flex-col w-full md:w-2/5">
+            <img src={teamSpiritSVG} alt="com" className="md:w-[70%]" /> <br />
             <h3 className="text-2xl font-bold capitalize md:text-3xl">
               See What other <br className="hidden md:block" /> traders are
               saying...
             </h3>
             <br />
-            <p className="opacity-75 md:w-100-40">
+            <p className="opacity-75 md:w-3/5">
               Review, Testimony and real profit result is what we get as
               feedback from our community .
             </p>
             <br />
             <p className="capitalize opacity-75">
               Join Our Winning Team 
-              <Link to='https://t.me/pipsbanktrade' className="ml-4 text-red-600 underline">Join Now</Link>
+              <Link to='https://t.me/pipsbanktrade' target="_blank" className="ml-4 text-red-600 underline">Join Now</Link>
             </p>
           </div>
-          <div className="relative flex flex-col w-full md:w-100-40 md:flex-row">
+          <div className="relative flex flex-col w-full md:w-3/5 md:flex-row">
             <TestimonialCard testimonialUser={"Lawson"} testimonialSaying={"I respect you.. I caught some pips on GBPUSD and exited. Big thanks!"} animeName={"fade-left"} animeDelay={"500"} />
             <TestimonialCard testimonialUser={"Gabriel"} testimonialSaying={"You are oneof the most humble successful traders I've ever met. I really appreciate for creating this wonderful community."} animeName={"fade-left"} animeDuration={"700"} />
             <TestimonialCard testimonialUser={"Obarima"} testimonialSaying={"This amazing analysis, I say a very big thank you because i took advantage of it and to be honest I made great out of it."} animeName={"fade-left"} animeDuration={"900"} />
@@ -190,11 +190,11 @@ const Home = () => {
         {/* Courses Section */}
         <section className="w-full px-6 my-12 md:px-12">
             <h3 className="text-3xl font-bold text-center capitalize">Learn Forex Trading <br className="hidden md:block" /> from A-Z with us for free</h3>
-            <div className="flex flex-col items-center justify-around md:flex-row">
-              <div className="w-full md:w-100-60">
+            <div className="flex flex-col items-center justify-around md:flex-row sm:space-x-4">
+              <div className="w-full md:w-3/5">
                 <CoursesCard courseThumbnail={pbBegImg} courseLevel={"Intermediate"} coursetitle={"Live Trading and Training"} courseDescription={"Watch us trade live and learn how we catch trands early..."} />
               </div>
-              <div className="w-full md:w-100-60 ">
+              <div className="w-full md:w-3/5">
                 <CoursesCard courseThumbnail={pbMentImg} courseLevel={"All_Levels"} coursetitle={"Beginners Class"} courseDescription={"This course contains everything you need to know about forex..."} />
               </div>
             </div>
