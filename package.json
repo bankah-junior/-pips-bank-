@@ -1,6 +1,6 @@
 {
   "name": "pips-bank",
-  "proxy": "http://localhost:5000",
+  "proxy": "https://jugotradingwepappserver.onrender.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
